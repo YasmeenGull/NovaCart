@@ -404,79 +404,6 @@ The current structure supports these tables:
 
 ---
 
-## ❌ What's NOT Implemented (For Future Phases)
-
-- ❌ JavaScript functionality
-- ❌ Backend/Server-side logic
-- ❌ Database
-- ❌ User authentication (real)
-- ❌ Cart calculations
-- ❌ Payment processing
-- ❌ Form submission
-- ❌ Product search/filtering (interactive)
-- ❌ API integration
-
----
-
-## 🖥️ How to Use This Project
-
-### 1. **Open in Browser**
-Simply double-click any HTML file or open it with your preferred browser:
-```
-index.html → Home Page
-products.html → Products Listing
-```
-
-### 2. **Navigate Between Pages**
-Use the navigation menu and links to move between pages.
-
-### 3. **Image Assets**
-The project includes locally stored product and category photography plus a
-homepage banner photo. Product images use a square (1:1) crop; category cards
-use a 3:2 crop to keep the grids aligned. The images are in `images/products/`,
-`images/categories/`, and `images/banners/`, so the pages work without a network
-connection. Replace them with your own images by updating the relative paths in
-the HTML and CSS.
-
-Sample photos are downloaded from Unsplash and saved in the project, so the
-website does not depend on a live image URL.
-
-### 4. **Customize Colors**
-Edit CSS variables in `css/style.css`:
-```css
-:root {
-  --primary-color: #007bff;  /* Change this */
-  --secondary-color: #6c757d; /* And this */
-}
-```
-
-### 5. **Add Content**
-Replace sample products, categories, and text with real content.
-
----
-
-## 📚 Design Guidelines
-
-### Colors Used
-- **Primary Blue** (#007bff) - Main buttons, links, highlights
-- **Dark Gray** (#212529) - Text, navigation background
-- **Light Gray** (#f8f9fa) - Backgrounds, alternating rows
-- **Red** (#dc3545) - Danger buttons, discount badges
-- **Green** (#28a745) - Success state
-- **Yellow** (#ffc107) - Ratings, warnings
-
-### Typography
-- **Font Family:** Segoe UI, Tahoma, Geneva, Verdana, sans-serif
-- **Main headings:** Bold, 32px
-- **Product names:** Bold, 18px
-- **Body text:** Regular, 14-16px
-- **Buttons:** Bold, 16px
-
-### Spacing
-- **Section padding:** 40px horizontal, 30px vertical
-- **Component gaps:** 20-30px
-- **Border radius:** 4-8px (for consistency)
-- **Shadow:** Subtle, 0 2px 8px rgba(0,0,0,0.1)
 
 ---
 
@@ -491,37 +418,6 @@ This project uses standard HTML5 and CSS3 that works on:
 
 ---
 
-## 📝 Project Submission
-
-### For Web Technology Course Submission:
-1. Ensure all 10 HTML pages are present
-2. Verify `css/style.css` is linked correctly
-3. Check all navigation links work
-4. Test responsive design on different screen sizes
-5. Ensure no broken image links
-6. Review semantic HTML structure
-7. Include this README.md file
-
-### Grading Criteria Met:
-- ✅ Complete HTML5 structure
-- ✅ Professional CSS3 design
-- ✅ Responsive layout
-- ✅ Semantic HTML elements
-- ✅ Consistent navigation
-- ✅ Professional appearance
-- ✅ All 10 required pages
-- ✅ Proper folder organization
-- ✅ Ready for JavaScript integration
-- ✅ Ready for backend integration
-
----
-
-## 📞 Support & Notes
-
-- This is a **frontend-only** submission for the current phase
-- JavaScript functionality will be added in Phase 2
-- Backend and database will be added in Phase 3
-- All naming conventions (classes, IDs, data attributes) are chosen to support future integration
 
 ---
 
@@ -534,8 +430,4 @@ This project uses standard HTML5 and CSS3 that works on:
 - **Scalable:** Easy to add new pages or components
 - **Professional:** Appropriate for a university-level course project
 
----
 
-**Project Status:** ✅ HTML5 & CSS3 Complete | Ready for JavaScript Phase
-**Last Updated:** 2024
-**Web Technology Semester Project**
