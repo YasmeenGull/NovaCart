@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart - Your Online Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>NovaCart</h1>
+                    </div>
+                    <nav class="nav-main">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-right">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search products..." name="search" class="search-input">
+                            <button type="submit" class="search-btn">Search</button>
+                        </div>
+                        <div class="header-icons">
+                            <a href="cart.html" class="cart-icon">
+                                <span class="icon">🛒</span>
+                                <span class="cart-count">0</span>
+                            </a>
+                            <a href="login.html" class="login-link">Login</a>
+                            <a href="register.html" class="register-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to NovaCart</h2>
+                <p>Discover amazing products at unbeatable prices</p>
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <div class="container">
+                <div class="promo-text">
+                    <h3>🎉 Special Offer: Get 20% Off on All Electronics!</h3>
+                    <p>Limited time offer. Use code: SAVE20 at checkout</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid">
+                    <article class="product-card" data-product-id="P001">
+                        <div class="product-image">
+                            <img src="images/products/product-1.jpg" alt="Wireless Headphones">
+                            <span class="discount-badge">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Wireless Headphones</h3>
+                            <p class="product-desc">Premium audio experience with noise cancellation</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(142 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$79.99</span>
+                                <span class="old-price">$99.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P001" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P001">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P002">
+                        <div class="product-image">
+                            <img src="images/products/product-2.jpg" alt="Smartphone">
+                            <span class="discount-badge">-15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Latest Smartphone</h3>
+                            <p class="product-desc">High-performance mobile device with advanced features</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(89 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$399.99</span>
+                                <span class="old-price">$449.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P002" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P002">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P003">
+                        <div class="product-image">
+                            <img src="images/products/product-3.jpg" alt="Laptop">
+                            <span class="discount-badge">-10%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pro Laptop</h3>
+                            <p class="product-desc">Powerful laptop for work and entertainment</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-text">(67 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$899.99</span>
+                                <span class="old-price">$999.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P003" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P003">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P004">
+                        <div class="product-image">
+                            <img src="images/products/product-4.jpg" alt="Smart Watch">
+                            <span class="discount-badge">-25%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Smart Watch</h3>
+                            <p class="product-desc">Stay connected with wearable technology</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(215 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$149.99</span>
+                                <span class="old-price">$199.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P004" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P004">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Categories -->
+        <section class="popular-categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <a href="categories.html#electronics" class="category-card">
+                        <div class="category-image"><img src="images/categories/electronics.jpg" alt="Electronics"></div>
+                        <h3>Electronics</h3>
+                    </a>
+                    <a href="categories.html#fashion" class="category-card">
+                        <div class="category-image"><img src="images/categories/fashion.jpg" alt="Fashion"></div>
+                        <h3>Fashion</h3>
+                    </a>
+                    <a href="categories.html#beauty" class="category-card">
+                        <div class="category-image"><img src="images/categories/beauty.jpg" alt="Beauty and personal care"></div>
+                        <h3>Beauty</h3>
+                    </a>
+                    <a href="categories.html#home" class="category-card">
+                        <div class="category-image"><img src="images/categories/home.jpg" alt="Home and living"></div>
+                        <h3>Home & Living</h3>
+                    </a>
+                    <a href="categories.html#accessories" class="category-card">
+                        <div class="category-image"><img src="images/categories/accessories.jpg" alt="Fashion accessories"></div>
+                        <h3>Accessories</h3>
+                    </a>
+                    <a href="categories.html#sports" class="category-card">
+                        <div class="category-image"><img src="images/categories/sports.jpg" alt="Sports and outdoors"></div>
+                        <h3>Sports</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="new-arrivals">
+            <div class="container">
+                <h2 class="section-title">New Arrivals</h2>
+                <div class="products-grid">
+                    <article class="product-card" data-product-id="P005">
+                        <div class="product-image">
+                            <img src="images/products/product-5.jpg" alt="Tablet">
+                            <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Tablet</h3>
+                            <p class="product-desc">Perfect for reading, browsing, and entertainment</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-text">(45 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$299.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P005" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P005">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P006">
+                        <div class="product-image">
+                            <img src="images/products/product-6.jpg" alt="Camera">
+                            <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Digital Camera</h3>
+                            <p class="product-desc">Capture your moments with professional quality</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(78 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$549.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P006" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P006">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P007">
+                        <div class="product-image">
+                            <img src="images/products/product-7.jpg" alt="Speakers">
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bluetooth Speakers</h3>
+                            <p class="product-desc">Portable speakers with powerful bass</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-text">(123 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$69.99</span>
+                                <span class="old-price">$99.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P007" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P007">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P008">
+                        <div class="product-image">
+                            <img src="images/products/product-8.jpg" alt="Monitor">
+                            <span class="discount-badge">-12%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>4K Monitor</h3>
+                            <p class="product-desc">Ultra HD display for gaming and design</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(91 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$349.99</span>
+                                <span class="old-price">$399.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P008" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P008">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discount Section -->
+        <section class="discount-section">
+            <div class="container">
+                <div class="discount-card">
+                    <h2>Exclusive Deals</h2>
+                    <p>Up to 50% off on selected items. Limited stock available!</p>
+                    <a href="products.html" class="btn btn-primary">Browse Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Free shipping on orders over $50</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔒</div>
+                        <h3>Secure Payment</h3>
+                        <p>100% secure and encrypted transactions</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⭐</div>
+                        <h3>Quality Products</h3>
+                        <p>Authentic products with warranty</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💬</div>
+                        <h3>Customer Support</h3>
+                        <p>24/7 dedicated customer service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get exclusive offers and latest updates delivered to your inbox</p>
+                <form class="newsletter-form" name="newsletter_form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About NovaCart</h4>
+                    <p>Your trusted online marketplace for quality products at great prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="categories.html#electronics">Electronics</a></li>
+                        <li><a href="categories.html#fashion">Fashion</a></li>
+                        <li><a href="categories.html#beauty">Beauty</a></li>
+                        <li><a href="categories.html#home">Home & Living</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NovaCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
