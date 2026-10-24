@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - ShopHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1><a href="index.html">ShopHub</a></h1>
+                    </div>
+                    <nav class="nav-main">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="categories.html" class="active">Categories</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-right">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search products..." name="search" class="search-input">
+                            <button type="submit" class="search-btn">Search</button>
+                        </div>
+                        <div class="header-icons">
+                            <a href="cart.html" class="cart-icon">
+                                <span class="icon">🛒</span>
+                                <span class="cart-count">0</span>
+                            </a>
+                            <a href="login.html" class="login-link">Login</a>
+                            <a href="register.html" class="register-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shop by Categories</h1>
+                <p>Browse our wide range of product categories</p>
+            </div>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="categories-full-grid">
+                    <!-- Electronics Category -->
+                    <article class="category-card-full" id="electronics" data-category="electronics">
+                        <div class="category-image-large">
+                            <img src="images/categories/electronics.jpg" alt="Electronics">
+                        </div>
+                        <div class="category-content">
+                            <h2>Electronics</h2>
+                            <p>Discover the latest gadgets and electronic devices including smartphones, laptops, headphones, and more. Find quality electronics at competitive prices.</p>
+                            <div class="category-stats">
+                                <span class="product-count">1,234 Products</span>
+                            </div>
+                            <a href="products.html?category=electronics" class="btn btn-primary">Browse Electronics</a>
+                        </div>
+                    </article>
+
+                    <!-- Fashion Category -->
+                    <article class="category-card-full" id="fashion" data-category="fashion">
+                        <div class="category-image-large">
+                            <img src="images/categories/fashion.jpg" alt="Fashion">
+                        </div>
+                        <div class="category-content">
+                            <h2>Fashion</h2>
+                            <p>Explore trendy clothing, shoes, and accessories for men, women, and kids. Stay fashionable with our latest collections from top brands.</p>
+                            <div class="category-stats">
+                                <span class="product-count">2,567 Products</span>
+                            </div>
+                            <a href="products.html?category=fashion" class="btn btn-primary">Browse Fashion</a>
+                        </div>
+                    </article>
+
+                    <!-- Beauty Category -->
+                    <article class="category-card-full" id="beauty" data-category="beauty">
+                        <div class="category-image-large">
+                            <img src="images/categories/beauty.jpg" alt="Beauty">
+                        </div>
+                        <div class="category-content">
+                            <h2>Beauty & Personal Care</h2>
+                            <p>Find skincare, makeup, haircare products, and personal grooming essentials. Quality beauty products from trusted brands at affordable prices.</p>
+                            <div class="category-stats">
+                                <span class="product-count">892 Products</span>
+                            </div>
+                            <a href="products.html?category=beauty" class="btn btn-primary">Browse Beauty</a>
+                        </div>
+                    </article>
+
+                    <!-- Home & Living Category -->
+                    <article class="category-card-full" id="home" data-category="home">
+                        <div class="category-image-large">
+                            <img src="images/categories/home.jpg" alt="Home & Living">
+                        </div>
+                        <div class="category-content">
+                            <h2>Home & Living</h2>
+                            <p>Transform your living space with furniture, home décor, kitchenware, and bedding. Create a comfortable and stylish home with our collection.</p>
+                            <div class="category-stats">
+                                <span class="product-count">1,643 Products</span>
+                            </div>
+                            <a href="products.html?category=home" class="btn btn-primary">Browse Home & Living</a>
+                        </div>
+                    </article>
+
+                    <!-- Accessories Category -->
+                    <article class="category-card-full" id="accessories" data-category="accessories">
+                        <div class="category-image-large">
+                            <img src="images/categories/accessories.jpg" alt="Accessories">
+                        </div>
+                        <div class="category-content">
+                            <h2>Accessories</h2>
+                            <p>Complete your style with bags, belts, watches, jewelry, and more. Find the perfect accessory to complement any outfit or device.</p>
+                            <div class="category-stats">
+                                <span class="product-count">1,105 Products</span>
+                            </div>
+                            <a href="products.html?category=accessories" class="btn btn-primary">Browse Accessories</a>
+                        </div>
+                    </article>
+
+                    <!-- Sports Category -->
+                    <article class="category-card-full" id="sports" data-category="sports">
+                        <div class="category-image-large">
+                            <img src="images/categories/sports.jpg" alt="Sports">
+                        </div>
+                        <div class="category-content">
+                            <h2>Sports & Outdoors</h2>
+                            <p>Gear up for any activity with sports equipment, outdoor gear, and fitness accessories. Find everything you need for an active lifestyle.</p>
+                            <div class="category-stats">
+                                <span class="product-count">756 Products</span>
+                            </div>
+                            <a href="products.html?category=sports" class="btn btn-primary">Browse Sports</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured in Categories Section -->
+        <section class="featured-in-categories">
+            <div class="container">
+                <h2 class="section-title">Popular Items Across Categories</h2>
+                <div class="products-grid">
+                    <article class="product-card" data-product-id="P001">
+                        <div class="product-image">
+                            <img src="images/products/product-1.jpg" alt="Wireless Headphones">
+                            <span class="discount-badge">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Wireless Headphones</h3>
+                            <p class="product-desc">Premium audio experience with noise cancellation</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(142 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$79.99</span>
+                                <span class="old-price">$99.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P001" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P001">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P002">
+                        <div class="product-image">
+                            <img src="images/products/product-2.jpg" alt="Smartphone">
+                            <span class="discount-badge">-15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Latest Smartphone</h3>
+                            <p class="product-desc">High-performance mobile device with advanced features</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(89 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$399.99</span>
+                                <span class="old-price">$449.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P002" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P002">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P003">
+                        <div class="product-image">
+                            <img src="images/products/product-3.jpg" alt="Laptop">
+                            <span class="discount-badge">-10%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pro Laptop</h3>
+                            <p class="product-desc">Powerful laptop for work and entertainment</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-text">(67 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$899.99</span>
+                                <span class="old-price">$999.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P003" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P003">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="P004">
+                        <div class="product-image">
+                            <img src="images/products/product-4.jpg" alt="Smart Watch">
+                            <span class="discount-badge">-25%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Smart Watch</h3>
+                            <p class="product-desc">Stay connected with wearable technology</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(215 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$149.99</span>
+                                <span class="old-price">$199.99</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-details.html?id=P004" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-add-cart" data-product-id="P004">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <p>Your trusted online marketplace for quality products at great prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#electronics">Electronics</a></li>
+                        <li><a href="#fashion">Fashion</a></li>
+                        <li><a href="#beauty">Beauty</a></li>
+                        <li><a href="#home">Home & Living</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
