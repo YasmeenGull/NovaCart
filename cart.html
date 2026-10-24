@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1><a href="index.html">ShopHub</a></h1>
+                    </div>
+                    <nav class="nav-main">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-right">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search products..." name="search" class="search-input">
+                            <button type="submit" class="search-btn">Search</button>
+                        </div>
+                        <div class="header-icons">
+                            <a href="cart.html" class="cart-icon">
+                                <span class="icon">🛒</span>
+                                <span class="cart-count">0</span>
+                            </a>
+                            <a href="login.html" class="login-link">Login</a>
+                            <a href="register.html" class="register-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shopping Cart</h1>
+            </div>
+        </section>
+
+        <!-- Cart Content -->
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-layout">
+                    <!-- Cart Items -->
+                    <div class="cart-items">
+                        <div class="cart-empty" id="empty-cart-message">
+                            <p>Your cart is empty</p>
+                            <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+                        </div>
+
+                        <div class="cart-table" id="cart-items-container" style="display: none;">
+                            <table class="items-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-items-body">
+                                    <!-- Sample cart item (will be populated by JavaScript later) -->
+                                    <tr class="cart-item" data-product-id="P001">
+                                        <td>
+                                            <div class="item-details">
+                                                <img src="images/products/product-1.jpg" alt="Wireless Headphones">
+                                                <div class="item-info">
+                                                    <h4>Wireless Headphones</h4>
+                                                    <p>Color: Black</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="price">$79.99</td>
+                                        <td>
+                                            <div class="quantity-controls">
+                                                <button class="qty-btn qty-decrease" data-product-id="P001">-</button>
+                                                <input type="number" value="1" min="1" class="qty-input" name="quantity" data-product-id="P001">
+                                                <button class="qty-btn qty-increase" data-product-id="P001">+</button>
+                                            </div>
+                                        </td>
+                                        <td class="item-total">$79.99</td>
+                                        <td>
+                                            <button class="remove-btn" data-product-id="P001">Remove</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <aside class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Discount:</span>
+                            <span id="discount">-$0.00</span>
+                        </div>
+                        <div class="summary-row tax-row">
+                            <span>Tax (10%):</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+
+                        <div class="promo-section">
+                            <input type="text" placeholder="Enter promo code" name="promo_code" class="promo-input" id="promo-code">
+                            <button class="btn btn-secondary" id="apply-promo">Apply Code</button>
+                        </div>
+
+                        <div class="cart-actions">
+                            <a href="products.html" class="btn btn-secondary">Continue Shopping</a>
+                            <a href="checkout.html" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</a>
+                        </div>
+
+                        <div class="cart-benefits">
+                            <p>✓ Free shipping on orders over $50</p>
+                            <p>✓ Secure checkout</p>
+                            <p>✓ 30-day returns</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <p>Your trusted online marketplace for quality products at great prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="categories.html#electronics">Electronics</a></li>
+                        <li><a href="categories.html#fashion">Fashion</a></li>
+                        <li><a href="categories.html#beauty">Beauty</a></li>
+                        <li><a href="categories.html#home">Home & Living</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
